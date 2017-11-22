@@ -28,7 +28,7 @@
             <Host name='localhost'
                   failCtxIfServletStartFails='true'>
                 <Listener className='org.cloudfoundry.tomcat.lifecycle.ApplicationStartupFailureDetectingLifecycleListener'/>
-                <Context docBase="clientFlow" path="/clientFlow" />
+                <Context docBase="/home/vcap/app" path="/clientFlow" />
             </Host>
         </Engine>
     </Service>
